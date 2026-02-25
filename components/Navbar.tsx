@@ -7,7 +7,7 @@ export default function Navbar() {
     const pathname = usePathname();
 
     const linkStyle = (path: string) =>
-        `hover:opacity-60 transition opacity ${
+        `opacity-60 hover:opacity-100 transition-opacity ${
             pathname === path ? "opacity-100 underline underline-offset-4" : "opacity-60"
         }`;
 
@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link href="/" className="font-serif text-lg tracking-widest">
                 marbincah
             </Link>
-            <div className="flex gap-8 text-sm">
+            <div className="flex gap-8 text-sm uppercase">
                 <Link href="/explore" className={linkStyle("/explore")}>Explore</Link>
                 <Link href="/lab" className={linkStyle("/lab")}>Lab</Link>
                 <Link href="/about" className={linkStyle("/about")}>About</Link>
