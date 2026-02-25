@@ -10,6 +10,14 @@ export default function Home() {
           <br className="hidden sm:block" />
           across disciplines, in progress.
         </p>
+        <div className="mt-10 flex gap-8 text-sm uppercase tracking-widest">
+          <a href="/explore" className="border-b border-transparent hover:border-current transition-all">
+            Explore
+          </a>
+          <a href="/lab" className="border-b border-transparent hover:border-current transition-all">
+            Lab
+          </a>
+        </div>
       </section>
     </main>
   )
