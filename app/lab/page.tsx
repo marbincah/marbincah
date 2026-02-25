@@ -1,7 +1,7 @@
 export default function LabPage() {
     return (
         <main className="min-h-screen px-6 py-24">
-            <section className="max-w-3xl mx-auto">
+            <section className="max-w-2xl mx-auto">
                 <h1 className="text-4xl font-light tracking-tight">
                     Lab
                 </h1>
