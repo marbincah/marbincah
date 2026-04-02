@@ -12,15 +12,17 @@ export default function Navbar() {
         }`;
 
     return (
-        <nav className="w-full flex justify-between items-center py-6 px-6 md:px-24">
-            <Link href="/" className="font-serif text-lg tracking-widest">
-                marbincah
-            </Link>
-            <div className="flex gap-8 text-sm uppercase">
-                <Link href="/explore" className={linkStyle("/explore")}>Explore</Link>
-                <Link href="/lab" className={linkStyle("/lab")}>Lab</Link>
-                <Link href="/about" className={linkStyle("/about")}>About</Link>
-            </div>
-        </nav>
+        <header className="sticky top-0 z-50">
+            <nav className="w-full flex justify-between items-center py-6 px-6 md:px-24">
+                <Link href="/" className="font-serif text-lg tracking-widest">
+                    marbincah
+                </Link>
+                <div className="flex gap-8 text-sm uppercase">
+                    <Link href="/explore" className={linkStyle("/explore")}>Explore</Link>
+                    <Link href="/lab" className={linkStyle("/lab")}>Lab</Link>
+                    <Link href="/about" className={linkStyle("/about")}>About</Link>
+                </div>
+            </nav>
+        </header>
     )
 }
